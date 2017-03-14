@@ -4,7 +4,11 @@ class Person
     @name = name
   end
 
+  def get_name
+    @name
+  end
+
 end
 
 p = Person.new('L. Ron')
-puts p.name
+puts p.get_name
