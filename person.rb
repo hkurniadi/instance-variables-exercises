@@ -1,6 +1,7 @@
 class Person
-  attr_reader :name
-  attr_writer :name
+  # attr_reader :name
+  # attr_writer :name
+  attr_accessor :name
 
   def initialize(name)
     @name = name
@@ -19,6 +20,6 @@ end
 p = Person.new('L. Ron')
 
 # puts p.get_name
-# puts p.name
+puts p.name
 # puts p.set_name("new naaame")
 puts p.name = "neeew naaame"
